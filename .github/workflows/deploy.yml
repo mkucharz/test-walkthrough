@@ -107,13 +107,13 @@ jobs:
             cd ${{ env.DEPLOY_PATH }}
             
             echo "📥 Pulling latest image..."
-            docker-compose pull
+            docker compose pull
             
             echo "🔄 Restarting services..."
-            docker-compose up -d --remove-orphans
+            docker compose up -d --remove-orphans
             
             echo "✅ Deployment complete!"
-            docker-compose ps
+            docker compose ps
           ENDSSH
       
       # 9. Health check
