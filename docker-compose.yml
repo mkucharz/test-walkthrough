@@ -38,4 +38,4 @@ services:
 
 networks:
   ${APP_NAME:-webapp}_default:
-    name: ${APP_NAME:-webapp}_default
+    external: true
